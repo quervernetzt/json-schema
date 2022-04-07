@@ -1,0 +1,38 @@
+{
+    "definitions": {
+        "files": {
+            "type": "array",
+            "description": "array of files",
+            "items": {
+                "$ref": "#/definitions/file"
+            }
+        },
+        "file": {
+            "type": "object",
+            "required": [
+                "name",
+                "date_created"
+            ],
+            "allOf": [],
+            "properties": {
+                "name": {
+                    "type": "string",
+                    "description": "name of a file",
+                    "examples": [
+                        "TestFile"
+                    ]
+                },
+                "type": {
+                    "type": "string",
+                    "description": "mime type of the content of that file"
+                },
+                "date_created": {
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "creation date and time of that file",
+                    "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}\\.\\d{3}(Z)?((\\+|\\-)\\d{2}:\\d{2})?$"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "JSONSchemaHelper": {
+      "commandName": "Project",
+      "commandLineArgs": "validate --schemaFilePath \"C:\\Users\\jozessi\\Desktop\\JSONSchemaHelper\\application\\schemas\\root-schema.json\" --jsonFilePath \"C:\\Users\\jozessi\\Desktop\\JSONSchemaHelper\\application\\schemas\\test-documents\\test-file.json\""
+    }
+  }
+}

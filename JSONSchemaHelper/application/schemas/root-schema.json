@@ -1,0 +1,28 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "allOf": [
+        {
+            "properties": {
+                "name": {
+                    "type": "string",
+                    "title": "Name",
+                    "description": "Name description",
+                    "pattern": "^[A-Z0-9]{1,32}$",
+                    "maxLength": 16,
+                    "default": "",
+                    "examples": [
+                        "ABCD1234"
+                    ]
+                },
+                "files": {
+                    "$ref": "references/files-schema.json#/definitions/files"
+                }
+            },
+            "required": [
+                "name",
+                "files"
+            ]
+        }
+    ]
+}

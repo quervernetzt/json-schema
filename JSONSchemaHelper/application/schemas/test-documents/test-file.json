@@ -1,0 +1,10 @@
+{
+    "name": "TestName",
+    "files": [
+        {
+            "name": "TestFileName",
+            "type": "TestType",
+            "date_created": "2021-01-05T09:30:40.000Z"
+        }
+    ]
+}
